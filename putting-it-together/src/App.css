@@ -15,3 +15,6 @@
 h1, p {
   margin-bottom: 15px;
 }
+.btn {
+  padding: 6px;
+}
