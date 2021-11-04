@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+.user-form {
+  /* display: flex;
+  flex-direction: column; */
+  /* align-items: center; */
+  margin: auto;
+  /* width: 60%; */
+}
+.formInput {
+  margin-bottom: 6px;
+  background-color: rgb(237, 236, 236);
+  padding: 10px 25px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  font-weight: lighter;
+  display: flex;
+  justify-content: space-between;
+}
+.formInput label {
+  margin-right: 16px;
+}
+.formInput input {
+  padding: 2px;
+}
+.yourData p {
+  margin-bottom: 18px;
+}
+h5 {
+  text-align: center;
+  margin: 20px;
+}
+p.inputDisclaimer {
+  margin-bottom: 20px;
+}
+.passwordsMustMatch {
+  margin-top: 6px;
+}
+.formMessage {
+  margin-bottom: 15px;
+}
