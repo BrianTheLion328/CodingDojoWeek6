@@ -52,7 +52,7 @@ const Form = (props) => {
 
             {firstName.length < 2 &&
             firstName.length > 0 &&
-            <p className="inputDisclaimer">First name must be at least 2 characters.</p> }
+            <p style={{color: "red"}} className="inputDisclaimer">First name must be at least 2 characters.</p> }
 
             <div className="formInput lastName">
                 <label>Last Name: </label>
@@ -61,7 +61,7 @@ const Form = (props) => {
 
             {lastName.length < 2 &&
             lastName.length > 0 &&
-            <p className="inputDisclaimer">Last Name must be at least 2 characters</p>}
+            <p style={{color: "red"}} className="inputDisclaimer">Last Name must be at least 2 characters</p>}
 
             <div className="formInput email">
                 <label>Email: </label>
@@ -70,7 +70,7 @@ const Form = (props) => {
 
             {email.length < 5 &&
             email.length > 0 &&
-            <p className="inputDisclaimer">Email must be at least 2 characters</p>}
+            <p style={{color: "red"}} className="inputDisclaimer">Email must be at least 2 characters</p>}
 
             <div className="formInput password">
                 <label>Password: </label>
@@ -79,7 +79,7 @@ const Form = (props) => {
 
             {password.length < 8 &&
             password.length > 0 &&
-            <p>Password must be at least 8 characters</p>}
+            <p style={{color: "red"}}>Password must be at least 8 characters</p>}
 
             <div className="formInput confirmedPW">
                 <label>Confirm Password: </label>
@@ -88,11 +88,11 @@ const Form = (props) => {
 
             {confirmedPW.length < 8 &&
             confirmedPW.length > 0 &&
-            <p className="inputDisclaimer passwordsMustMatch">Confirmed password must be same length as original password</p>}
+            <p style={{color: "red"}} className="inputDisclaimer passwordsMustMatch">Confirmed password must be same length as original password</p>}
 
             {confirmedPW === password && confirmedPW.length === password.length ?
             <p></p> :
-            <p>Passwords MUST match!</p>}
+            <p style={{color: "red"}}>Passwords MUST match!</p>}
 
             <div>
                 <input type="submit" value="Submit Form" />
