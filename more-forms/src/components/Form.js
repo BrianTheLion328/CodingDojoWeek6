@@ -15,7 +15,9 @@ const Form = (props) => {
         e.preventDefault()
 
         const newUser = { firstName, lastName, email, password, confirmedPW };
+
         console.log("NEW USER: ", newUser);
+        
         setFirstName("");
         setLastName("");
         setEmail("");
@@ -24,20 +26,6 @@ const Form = (props) => {
         setSubmittedForm(true);
         console.log(newUser)
     }
-
-    // first name validation
-    // const firstNameValidation = (e) => {
-    //     e.preventDefault()
-
-    //     setFirstName(e.target.value);
-    //     if (e.target.value.length < 1){
-    //         setFirstNameMessage("Please entern a valid first name")
-    //     } else if (e.target.value.length < 2) {
-    //         setFirstNameMessage("First name must be 2 characters or longer!");
-    //     } else {
-    //         setFirstNameMessage("")
-    //     }
-    // }
 
     return (
         <div className="user-form">
